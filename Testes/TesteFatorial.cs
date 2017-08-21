@@ -15,7 +15,7 @@ namespace Testes
 
             int fatorial = calcula.Calcular(5);
 
-            fatorial.Should().Be(12010);
+            fatorial.Should().Be(120);
         }
 
         [Fact]

@@ -6,7 +6,7 @@ using FluentAssertions;
 namespace Testes
 {
 
-    public class TesteFatorial
+    public class TesteCalculaFatorial
     {
         [Fact]
         public void FatorialiDe5()

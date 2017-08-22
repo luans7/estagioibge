@@ -6,7 +6,7 @@ using FluentAssertions;
 namespace Testes
 {
 
-    public class TesteFibonacci
+    public class TesteCalculaFibonacci
     {
         [Fact]
         public void TestarFibonacciDe5()
@@ -15,7 +15,7 @@ namespace Testes
 
             int fibonacci = calcula.Calcular(5);
 
-            fibonacci.Should().Be5(8);
+            fibonacci.Should().Be(8);
         }
 
         [Fact]
@@ -35,7 +35,7 @@ namespace Testes
 
             int fibonacci = calcula.Calcular(0);
 
-            fibonacci.Should().Be(0);
+            fibonacci.Should().Be(1);
         }
 
         [Fact]

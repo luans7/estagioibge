@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    class Program
+     class Program
     {
         static void Main(string[] args)
         {
@@ -15,18 +15,29 @@ namespace ConsoleApp3
 
             //int fatorial = calcula.Calcular(5);
             //Console.WriteLine(fatorial);
-                
+
 
             //Console.ReadKey();
 
             CalculaFibonacci calcula = new CalculaFibonacci();
 
-            int fibonacci = calcula.Calcular(5);
+            int fibonacci = calcula.Calcular(6);
             Console.WriteLine(fibonacci);
 
 
             Console.ReadKey();
-        }      
-    }
-}
+
+           // CalculaFatorialRecursivo calcula = new CalculaFatorialRecursivo();
+
+           // int fatorialrecursivo = calcula.Calcular(6);
+           // Console.WriteLine(fatorialrecursivo);
+
+
+           // Console.ReadKey();
+        }
+
+        
+     }
+   
+ }
 

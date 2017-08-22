@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="CalculaFatorial.cs" />
     <Compile Include="CalculaFibonacci.cs" />
-    <Compile Include="FatorialRecursivo.cs" />
+    <Compile Include="CalculaFatorialRecursivo.cs" />
     <Compile Include="ICalculaValor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

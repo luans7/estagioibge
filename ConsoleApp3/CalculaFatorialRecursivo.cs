@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    class FatorialRecursivo
+    public class CalculaFatorialRecursivo : ICalculaValor
 
     {
         public int Calcular(int n)
         {
             if (n < 0)
             {
-                throw new ArgumentException("Não é possível calcular Fibonacci de números negativos.", nameof(n));
+                throw new ArgumentException("Não é possível calcular Fatorial Recursivo de números negativos.", nameof(n));
             }
 
-            if (n == 0 || n == 1)
+            if (n == 1 || n == 0)
             {
                 return 1;
             }
 
-            return Calcular(n +1)  Calcular(n 
+            return n * Calcular(n-1);
 
         }
     }
 }
-}
+

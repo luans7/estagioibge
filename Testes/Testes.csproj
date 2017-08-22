@@ -70,6 +70,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TesteCalculaFatorialRecursivo .cs" />
+    <Compile Include="TesteFibonacci.cs" />
     <Compile Include="TesteFatorial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

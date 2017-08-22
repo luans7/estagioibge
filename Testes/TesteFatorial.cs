@@ -9,7 +9,7 @@ namespace Testes
     public class TesteFatorial
     {
         [Fact]
-        public void TestarFatorialDe5()
+        public void FatorialiDe5()
         {
             CalculaFatorial calcula = new CalculaFatorial();
 
@@ -47,9 +47,6 @@ namespace Testes
 
             fatorial.Should().Be(6);
         }
-
-        
-     
 
         [Theory]
         [InlineData(-1)]

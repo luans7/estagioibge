@@ -15,7 +15,7 @@ namespace ConsoleApp3
                 throw new ArgumentException("Não é possível calcular Fibonacci de números negativos.", nameof(n));
             }
 
-            if (n == 1 || n == 2)
+            if (n == 1 || n == 0)
             {
                 return 1;
             }

@@ -19,21 +19,37 @@ namespace ConsoleApp3
 
             //Console.ReadKey();
 
-            CalculaFibonacci calcula = new CalculaFibonacci();
+            //CalculaFibonacci calcula = new CalculaFibonacci();
 
-            int fibonacci = calcula.Calcular(6);
-            Console.WriteLine(fibonacci);
+            //int fibonacci = calcula.Calcular(6);
+            //Console.WriteLine(fibonacci);
+
+
+            //Console.ReadKey();
+
+            // CalculaFatorialRecursivo calcula = new CalculaFatorialRecursivo();
+
+            // int fatorialrecursivo = calcula.Calcular(6);
+            // Console.WriteLine(fatorialrecursivo);
+
+
+            // Console.ReadKey();
+
+            // Fibonacci calcula = new Fibonacci();
+
+            // int fibonacci = calcula.Calcular(6);
+            //Console.WriteLine(fibonacci);
+
+
+            // Console.ReadKey();
+
+            CalculadoraIrpf calcula = new CalculadoraIrpf();
+
+            decimal salario = calcula.Calcular(-14m);
+            Console.WriteLine(salario);
 
 
             Console.ReadKey();
-
-           // CalculaFatorialRecursivo calcula = new CalculaFatorialRecursivo();
-
-           // int fatorialrecursivo = calcula.Calcular(6);
-           // Console.WriteLine(fatorialrecursivo);
-
-
-           // Console.ReadKey();
         }
 
         

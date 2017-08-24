@@ -43,9 +43,9 @@ namespace ConsoleApp3
 
             // Console.ReadKey();
 
-            CalculadoraIrpf calcula = new CalculadoraIrpf();
+            CalculadoraIrpf2 calcula = new CalculadoraIrpf2();
 
-            decimal salario = calcula.Calcular(-14m);
+            decimal salario = calcula.Calcular(10000.00m);
             Console.WriteLine(salario);
 
 

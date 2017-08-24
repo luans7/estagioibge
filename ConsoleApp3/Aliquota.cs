@@ -22,6 +22,14 @@ namespace ConsoleApp3
             this.SalarioFinal = salarioFinal;
             this.Percentual = percentual;
             this.ParcelaDeduzir = parcelaDeduzir;
-        }            
+        }
+
+        public bool CompreendeSalario(decimal salario)
+        {
+            if (SalarioFinal.HasValue)
+                return SalarioInicial <= salario && SalarioFinal >= salario;
+            else
+                return SalarioInicial >salario;
+        }
     }
 }

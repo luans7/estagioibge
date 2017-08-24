@@ -10,7 +10,7 @@ namespace ConsoleApp3
     {
         private List<Aliquota> aliquotas;
 
-        public CalculadoraIrpf2 ()
+        public CalculadoraIrpf2()
         {
             aliquotas = new List<Aliquota>();
             aliquotas.Add(new Aliquota(0, 1903.98m, 0, 0));
@@ -19,16 +19,22 @@ namespace ConsoleApp3
             aliquotas.Add(new Aliquota(3751.06m, 4664.68m, 0.225m, 636.13m));
             aliquotas.Add(new Aliquota(4664.69m, null, 0.275m, 869.36m));
         }
-        for(aliquota)
+        
         public decimal Calcular(decimal salario)
-        {
-           
+        {           
             if (salario < 0)
             {
                 throw new ArgumentException("Não é possível calcular imposto de salários negativos.", nameof(salario));
             }
 
-           
+            foreach (Aliquota item in aliquotas)
+            {
+                if (item.CompreendeSalario(salario))
+                {
+                    return salario * item.Percentual - item.ParcelaDeduzir;
+                }
+            }
+            throw new SystemException("Aliquota não encontrada.");
         }
     }
 }

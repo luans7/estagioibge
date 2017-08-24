@@ -29,7 +29,7 @@ namespace ConsoleApp3
             if (SalarioFinal.HasValue)
                 return SalarioInicial <= salario && SalarioFinal >= salario;
             else
-                return SalarioInicial >salario;
+                return SalarioInicial <= salario;
         }
     }
 }

@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AliquotaIrpf.cs" />
     <Compile Include="CalculadoraIrpf 2.cs" />
+    <Compile Include="CalculadoraIrpf 3.cs" />
     <Compile Include="CalculaFatorial.cs" />
     <Compile Include="CalculaFibonacci.cs" />
     <Compile Include="CalculaFatorialRecursivo.cs" />

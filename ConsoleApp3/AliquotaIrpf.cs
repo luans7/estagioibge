@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    public class Aliquota
+    public class AliquotaIrpf
     {
         public decimal SalarioInicial { get; private set; }
 
@@ -14,14 +14,14 @@ namespace ConsoleApp3
 
         public decimal Percentual { get; private set; }
 
-        public decimal ParcelaDeduzir { get; private set; }
+      
 
-        public Aliquota (decimal salarioInicial, decimal? salarioFinal, decimal percentual, decimal parcelaDeduzir)
+        public AliquotaIrpf (decimal salarioInicial, decimal? salarioFinal, decimal percentual ) //inss
         {
             this.SalarioInicial = salarioInicial;
             this.SalarioFinal = salarioFinal;
             this.Percentual = percentual;
-            this.ParcelaDeduzir = parcelaDeduzir;
+          
         }
 
         public bool CompreendeSalario(decimal salario)
@@ -29,7 +29,7 @@ namespace ConsoleApp3
             if (SalarioFinal.HasValue)
                 return SalarioInicial <= salario && SalarioFinal >= salario;
             else
-                return SalarioInicial <=salario;
+                return SalarioInicial <= salario;
         }
     }
 }

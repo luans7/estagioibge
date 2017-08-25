@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    public class CalculadoraIrpf2
+    public class CalculadoraIrpf2 
     {
         private List<Aliquota> aliquotas;
 
@@ -20,6 +20,7 @@ namespace ConsoleApp3
             aliquotas.Add(new Aliquota(4664.69m, null, 0.275m, 869.36m));
         }
         
+
         public decimal Calcular(decimal salario)
         {           
             if (salario < 0)

@@ -43,16 +43,26 @@ namespace ConsoleApp3
 
             // Console.ReadKey();
 
+            decimal salario = 2000.00m;
+
+            CalculadoraInss calculaInss = new CalculadoraInss();
+
             CalculadoraIrpf2 calcula = new CalculadoraIrpf2();
 
-            decimal salario = calcula.Calcular(10000.00m);
-            Console.WriteLine(salario);
+            decimal inss = calculaInss.Calcular(salario);
 
+            decimal irpf = calcula.Calcular(salario - inss);
+
+            Console.WriteLine("Salario Bruto:"+salario);
+
+            Console.WriteLine("INSS:" + inss);
+
+            Console.WriteLine("IRPF:" + irpf);
+
+            Console.WriteLine("Salario Liquido:" +(salario-inss-irpf));
 
             Console.ReadKey();
-        }
-
-        
+        }        
      }
    
  }
